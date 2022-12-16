@@ -86,3 +86,22 @@ header {
     width: 300px;
     object-fit: cover; 
 }
+
+/* Carrossel */
+
+.address {
+
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #292a2a;
+}
+
+.address h2, .address p {
+    color: #756f6f;
+    padding-left: 3rem;
+}
+
+.address hr {
+    width: 90%;
+    color: #756f6f;
+}
