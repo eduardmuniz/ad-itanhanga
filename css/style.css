@@ -92,7 +92,7 @@ header {
 .address {
 
     padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     background-color: #292a2a;
 }
 
@@ -104,4 +104,11 @@ header {
 .address hr {
     width: 90%;
     color: #756f6f;
+}
+
+
+footer {
+    background-color: #5ab8a1;
+    padding: 2rem;
+    text-align: center;
 }
