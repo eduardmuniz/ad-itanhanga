@@ -1,7 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 
 header { 
@@ -17,14 +16,17 @@ header {
     justify-content: space-evenly;
 }
 
+.icons-header a, i {
+    text-decoration: none;
+    font-size: 18px;
+}
+
 .contact {
     padding: 1rem;
     display: block;
     text-align: center;
 }
 
-.icons-header a {
-}
 
 .icons-header img, .contact img{
     width: 25px;
@@ -37,8 +39,27 @@ header {
     margin-left: 2rem;
 }
 
+i {
+    color: white;
+}
+
 #navbar {
-    box-shadow: 0px 1px 2px rgba(108, 102, 102, 0.371)
+    box-shadow: 0px 1px 2px rgba(108, 102, 102, 0.371);
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#navbarNav {
+    background: #eaeaea;
+    
+}
+
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
 /* Section */
@@ -92,7 +113,7 @@ header {
 .address {
 
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 5   rem;
     background-color: #292a2a;
 }
 
@@ -112,3 +133,60 @@ footer {
     padding: 2rem;
     text-align: center;
 }
+
+@media (min-width: 992px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+
+    .icons-header {
+        padding: 0;
+    }
+
+    .icons-header a {
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    body > header > div.icons-header > a {transition: ease-in-out 300ms !important;}
+    body > header > div.icons-header > a:nth-child(1):hover {background: #3b5996;}
+    body > header > div.icons-header > a:nth-child(2):hover {background: #d6249f;}
+    body > header > div.icons-header > a:nth-child(3):hover {background: #1ea362;}
+}
+
+
+    .contact {
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .contact a, .contact {
+        color: white;
+        text-decoration: none;
+    }
+    .contact a:hover {
+        color: black;
+    }
+
+    #navbar{
+        flex-direction: column;
+    }
+
+    #navbarNav {
+        height: 60px;
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        width: 100%;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+} 
