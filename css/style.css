@@ -68,6 +68,11 @@ i {
 
 /* Section */
 
+.mainbanner img.mobile {
+    width: 100%;
+}
+.mainbanner img.desktop {display: none;}
+
 .schedule {
     padding: 2rem 0;
     text-align: center;
@@ -126,6 +131,24 @@ i {
     border-radius: 6px;
 }
 
+.courses {
+    background: #384852;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.courses img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+.courses a {
+    width: 80%
+
+}
+
+.locale 
 /* Carrossel */
 
 .address {
@@ -174,6 +197,12 @@ footer {
     body > header > div.icons-header > a:nth-child(1):hover {background: #3b5996;}
     body > header > div.icons-header > a:nth-child(2):hover {background: #d6249f;}
     body > header > div.icons-header > a:nth-child(3):hover {background: #1ea362;}
+
+    .mainbanner img.mobile {display: none;}
+    .mainbanner img.desktop {
+        display: block;
+        width: 100%;
+    }
 
     .cultos-semanais {
         flex-direction: row;
